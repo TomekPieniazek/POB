@@ -14,7 +14,7 @@ public class Main {
         assert ryba.getWiek() == 1;
         assert pies.dajGlos().equals("Hau hau");
         assert ryba.dajGlos().equals("Bul bul");
-        assert ImienneZwierze.class.isInstance(pies);
-        assert !ImienneZwierze.class.isInstance(ryba);
+        assert pies instanceof ImienneZwierze;
+        assert !(ryba instanceof ImienneZwierze);
     }
 }
